@@ -18,8 +18,20 @@
 
     .nav__link.active {
       color: $primaryGreen;
-      border-bottom: 1px solid $primaryGreen;
-      border-width: .875rem;
+      padding-block-end: .2rem;
+      position: relative;
     }
+
+    .nav__link.active::before {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: .875rem;
+      height: 0.125rem;
+      background-color: $primaryGreen;
+      transform: translateX(-50%);
+    }
+
   }
 }
