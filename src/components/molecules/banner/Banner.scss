@@ -1,0 +1,99 @@
+@import "../../../scss/variables";
+
+.banner {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin-block-end: 10.05rem;
+
+  &__btn__product {
+    width: 15.625rem;
+    height: 3.125rem;
+    background-color: $primaryRed;
+    border: 0;
+    border-radius: 0.625rem;
+    color: $white;
+    font-size: 1rem;
+    letter-spacing: 0.05rem;
+    cursor: pointer;
+    margin-block-end: 3.12rem;
+  }
+
+  &__title {
+    color: $white;
+    font-size: 6rem;
+    font-weight: 600;
+    line-height: 121.5%;
+    text-align: center;
+    margin-block-end: 3.13rem;
+  }
+
+  &__subtitle {
+    color: $white;
+    font-size: 1.5rem;
+    font-weight: 400;
+    letter-spacing: 0.075rem;
+    text-align: center;
+    margin-block-end: 4.37rem;
+  }
+
+  .text-accent {
+    color: $primaryGreen;
+  }
+
+  .banner__img {
+    position: relative;
+    margin-block-end: 7.25rem;
+
+    .phone {
+      position: absolute;
+      right: 0;
+      top: 5.19rem;
+    }
+
+    .laptop img {
+      width: 55.4375rem;
+      height: 31.1875rem;
+    }
+
+    .phone img {
+      width: 14.4375rem;
+      height: 28.875rem;
+    }
+  }
+
+  .banner__buttons {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 6.19rem;
+
+    .banner__btn__explore {
+      width: 12.5rem;
+      height: 3.125rem;
+      background-color: $primaryGreen;
+      border: 0;
+      border-radius: 0.625rem;
+      color: $white;
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+
+    .banner__btn__demo {
+      width: 12.5rem;
+      height: 3.125rem;
+      background-color: $primaryBlue;
+      border: 0;
+      border-radius: 0.625rem;
+      color: $white;
+      font-size: 1rem;
+      letter-spacing: 0.05rem;
+      font-weight: 600;
+      cursor: pointer;
+    }
+  }
+}
