@@ -1,4 +1,5 @@
 import Banner from "./components/molecules/banner/Banner"
+import Card from "./components/molecules/card/Card"
 import Header from "./components/molecules/header/Header"
 
 const App = () => {
@@ -6,6 +7,7 @@ const App = () => {
     <div className="container">
       <Header />
       <Banner />
+      <Card />
     </div>
   )
 }
