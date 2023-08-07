@@ -1,0 +1,26 @@
+@import "../../../scss/variables";
+
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: .63rem;
+
+  .logo__img {
+    width: 2.75rem;
+    height: 2.75rem;
+    flex-shrink: 0;
+  }
+
+  .logo__title {
+    font-size: 1.5rem;
+    font-weight: 700;
+    line-height: normal;
+    letter-spacing: 0.075rem;
+    color: $white;
+
+    .text-accent {
+      color: $primaryGreen;
+    }
+  }
+}

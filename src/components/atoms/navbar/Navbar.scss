@@ -1,0 +1,25 @@
+@import "../../../scss/variables";
+
+.nav {
+  &__list {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 3.13rem;
+
+    .nav__link {
+      text-align: right;
+      font-size: 1rem;
+      font-weight: 400;
+      line-height: normal;
+      letter-spacing: 0.05rem;
+      color: $white;
+    }
+
+    .nav__link.active {
+      color: $primaryGreen;
+      border-bottom: 1px solid $primaryGreen;
+      border-width: .875rem;
+    }
+  }
+}
