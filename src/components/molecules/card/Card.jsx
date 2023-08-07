@@ -5,7 +5,7 @@ const Card = () => {
   const { examples } = data;
 
   return (
-    <section className="section__card">
+    <main className="section__card">
       {examples.map((example) => (
         <div className="card" key={example.id}>
           <img className="card__img" src={example.imgURL} alt={example.title} />
@@ -15,7 +15,7 @@ const Card = () => {
           </div>
         </div>
       ))}
-    </section>
+    </main>
   );
 };
 
