@@ -1,3 +1,4 @@
+import Footer from "./components/atoms/footer/Footer"
 import Banner from "./components/molecules/banner/Banner"
 import Card from "./components/molecules/card/Card"
 import Cta from "./components/molecules/cta/Cta"
@@ -10,6 +11,7 @@ const App = () => {
       <Banner />
       <Card />
       <Cta />
+      <Footer />
     </div>
   )
 }

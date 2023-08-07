@@ -1,0 +1,14 @@
+@import "../../../scss/variables";
+
+footer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding-block: 4.37rem;
+
+  .footer__text {
+    color: rgba(255, 255, 255, 0.35);
+    font-size: 1rem;
+    line-height: 121.5%; /* 1.215rem */
+  }
+}
