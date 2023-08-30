@@ -1,0 +1,28 @@
+@import "../../../scss/variables";
+
+.nav__link {
+  text-align: right;
+  font-size: 1rem;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: 0.05rem;
+  color: $white;
+  transition: all .3s ease;
+
+  &:hover {
+    color: $primaryGreen;
+    padding-block-end: 0.2rem;
+    position: relative;
+
+    &::before {
+      content: "";
+      position: absolute;
+      bottom: 0;
+      left: 50%;
+      width: 0.875rem;
+      height: 0.125rem;
+      background-color: $primaryGreen;
+      transform: translateX(-50%);
+    }
+  }
+}
