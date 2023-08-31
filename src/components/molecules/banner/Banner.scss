@@ -63,8 +63,7 @@
   .banner__img {
     position: relative;
     margin-block-end: 7.25rem;
-    filter: drop-shadow(0 0 10rem rgba(150, 208, 104, 0.5));
-    -webkit-filter: drop-shadow(0 0 10rem rgba(150, 208, 104, 0.5));
+    z-index: 5;
     
     .phone {
       @media(max-width: $md) {
@@ -100,6 +99,19 @@
 
       width: 14.4375rem;
       height: 28.875rem;
+    }
+
+    &::before {
+      content: "";
+      position: absolute;
+      top: -1.3rem;
+      left: 2rem;
+      right: 2rem;
+      bottom: -1.3rem;
+      background-color: rgba(150, 208, 104, 0.5);
+      filter: blur(3rem);
+      -webkit-filter: blur(3rem);
+      z-index: -1;
     }
   }
 
