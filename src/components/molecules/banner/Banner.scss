@@ -1,6 +1,10 @@
 @import "../../../scss/variables";
 
 .banner {
+  @media (max-width: $md) {
+    margin-block-end: 3rem;
+  }
+
   min-height: 100vh;
   display: flex;
   align-items: center;
@@ -22,6 +26,12 @@
   }
 
   &__title {
+    @media(max-width: $md) {
+      font-size: 2.5rem;
+      margin-block-end: 1.5rem;
+      text-align: left;
+    }
+
     color: $white;
     font-size: 6rem;
     font-weight: 600;
@@ -31,6 +41,12 @@
   }
 
   &__subtitle {
+    @media(max-width: $md) {
+      font-size: 1rem;
+      margin-block-end: 2rem;
+      text-align: left;
+    }
+
     max-width: 60ch;
     color: $white;
     font-size: 1.5rem;
@@ -50,29 +66,57 @@
     filter: drop-shadow(0 0 10rem rgba(150, 208, 104, 0.5));
     
     .phone {
+      @media(max-width: $md) {
+        top: 1.5rem;
+      }
+
       position: absolute;
       right: 0;
       top: 5.19rem;
     }
 
     .laptop img {
+      @media (max-width: $md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 100%;
+        height: 100%;
+      }
+
       width: 55.4375rem;
       height: 31.1875rem;
     }
 
     .phone img {
+      @media(max-width: $md) {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        width: 25vw;
+        height: 100%;
+      }
+
       width: 14.4375rem;
       height: 28.875rem;
     }
   }
 
   .banner__buttons {
+    @media(max-width: $md) {
+      gap: 1rem;
+    }
+
     display: flex;
     align-items: center;
     justify-content: space-between;
     gap: 6.19rem;
 
     .banner__btn__explore {
+      @media(max-width: $md) {
+        width: 100%;
+      }
+
       width: 12.5rem;
       height: 3.125rem;
       background-color: $primaryGreen;
@@ -86,6 +130,10 @@
     }
 
     .banner__btn__demo {
+      @media(max-width: $md) {
+        width: 100%;
+      }
+
       width: 12.5rem;
       height: 3.125rem;
       background-color: $primaryBlue;

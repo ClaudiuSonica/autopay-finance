@@ -5,8 +5,9 @@
   .nav__list__mobile {
     display: flex;
     align-items: center;
-    justify-content: center;
+    justify-content: flex-start;
     flex-direction: column;
+    padding-block-start: 5rem;
     gap: 1.5rem;
     position: fixed;
     inset: 0 0 0 0%;
@@ -33,7 +34,7 @@
 .menu__toggle-open {
   position: fixed;
   right: 5%;
-  top: 10%;
+  top: 5%;
   font-size: 1.5rem;
   color: $background;
 }

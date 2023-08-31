@@ -1,6 +1,11 @@
 @import "../../../scss/variables";
 
 header {
+  @media(max-width: $md) {
+    padding-block: 1.5rem;
+    margin-block-end: 2rem;
+  }
+
   display: flex;
   align-items: center;
   justify-content: space-between;

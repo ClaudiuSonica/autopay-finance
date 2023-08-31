@@ -1,6 +1,10 @@
 @import "../../../scss/variables";
 
 .cta {
+  @media(max-width: $md) {
+    flex-direction: column;
+  }
+
   border-radius: 1.25rem;
   background: linear-gradient(
     148deg,
@@ -13,9 +17,20 @@
   justify-content: space-between;
 
   &__text {
+    @media(max-width: $md) {
+      max-width: 100%;
+    }
+
     max-width: 70%;
 
     .cta__title {
+      @media(max-width: $md) {
+        font-size: 2rem;
+        line-height: 100%;
+        text-align: center;
+        margin-block-end: 1.5rem;
+      }
+
       color: $white;
       font-size: 4rem;
       font-weight: 600;
@@ -23,6 +38,13 @@
     }
 
     .cta__info {
+      @media(max-width: $md) {
+        font-size: 1rem;
+        line-height: 100%;
+        text-align: left;
+        margin-block-end: 1.5rem;
+      }
+
       color: $white;
       font-size: 1.5rem;
       font-weight: 400;
@@ -31,6 +53,10 @@
   }
 
   &__btn {
+    @media(max-width: $md) {
+      width: 100%;
+    }
+
     border: 0;
     border-radius: 0.625rem;
     background: $primaryGreen;
