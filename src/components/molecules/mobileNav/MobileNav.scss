@@ -1,0 +1,39 @@
+@import "../../../scss/variables";
+
+.nav__mobile {
+
+  .nav__list__mobile {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: fixed;
+    inset: 0 0 0 0%;
+    background: hsla(0, 0%, 100%, 0.3);
+    backdrop-filter: blur(2rem);
+    -webkit-backdrop-filter: blur(2rem);
+    z-index: 10;
+
+    & .nav__link {
+      color: $background;
+
+      &:hover {
+        all: unset;
+        cursor: pointer;
+      }
+    }
+  }
+}
+
+.menu-toggle {
+  z-index: 100;
+}
+
+.menu__toggle-open {
+  position: fixed;
+  right: 5%;
+  top: 10%;
+  font-size: 1.5rem;
+  color: $background;
+}

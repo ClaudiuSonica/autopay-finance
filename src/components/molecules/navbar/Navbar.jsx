@@ -1,5 +1,5 @@
 import "./Navbar.scss";
-import NavItem from "../navItem/NavItem";
+import NavItem from "../../atoms/navItem/NavItem";
 
 const Navbar = () => {
 
@@ -12,7 +12,6 @@ const Navbar = () => {
           return <NavItem key={i} link={item} />
         })}
       </ul>
-      <div className="menu-toggle">=</div>
     </nav>
   );
 };
