@@ -47,7 +47,7 @@
       text-align: left;
     }
 
-    max-width: 60ch;
+    max-width: 55rem;
     color: $white;
     font-size: 1.5rem;
     font-weight: 400;
@@ -64,6 +64,7 @@
     position: relative;
     margin-block-end: 7.25rem;
     filter: drop-shadow(0 0 10rem rgba(150, 208, 104, 0.5));
+    -webkit-filter: drop-shadow(0 0 10rem rgba(150, 208, 104, 0.5));
     
     .phone {
       @media(max-width: $md) {
